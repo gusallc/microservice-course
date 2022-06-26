@@ -40,4 +40,4 @@ logging:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8099/eureka/
+      default-zone: http://localhost:8099/eureka/
