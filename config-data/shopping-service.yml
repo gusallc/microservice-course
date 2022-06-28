@@ -42,6 +42,18 @@ eureka:
     service-url:
       defaultZone: http://localhost:8099/eureka/
 
+feign:
+  circuitbreaker:
+    enabled: true
+    
+#Config Actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
 resilience4j.circuitbreaker:
     instances:
         customerCB:
