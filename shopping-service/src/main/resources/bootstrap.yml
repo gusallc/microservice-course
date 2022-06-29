@@ -8,4 +8,7 @@ spring:
       password: s3cr3t
   boot:
     admin:
-      client-url : http://localhost:8085
+      client:
+        url: http://localhost:8086
+        instance:
+          serviceHostType: host_name

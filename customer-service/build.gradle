@@ -21,6 +21,7 @@ repositories {
 
 ext {
 	set('springCloudVersion', "2021.0.3")
+	set('springBootAdminVersion', "2.7.1")
 }
 
 dependencies {
@@ -44,6 +45,7 @@ dependencies {
 dependencyManagement {
 	imports {
 		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+		mavenBom "de.codecentric:spring-boot-admin-dependencies:${springBootAdminVersion}"
 	}
 }
 
